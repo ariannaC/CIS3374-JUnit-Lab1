@@ -13,35 +13,41 @@ public class CalculatorTest {
 	public void setUp() {
 		calculator = new Calculator();
 	}
-
+	
 	@Test
-	public void addTest() {
-		assertEquals(4, calculator.add(2, 2));
+	public void addTest()
+	{
+		assertEquals(4, calculator.add(2,2));
 	}
 	
 	@Test
-	public void subtractTest() {
-		assertEquals(4, calculator.subtract(8, 4));
+	public void subtractTest()
+	{
+		assertEquals(3, calculator.subtract(6, 3));
 	}
 	
 	@Test
-	public void multiplyTest() {
-		assertEquals(4, calculator.multiply(2, 2));
+	public void multiplyTest() 
+	{
+		assertEquals(9, calculator.multiply(3, 3));
 	}
 	
 	@Test
-	public void divideTest() {
-		assertEquals(4, calculator.divide(8, 2));
+	public void divideTest() 
+	{
+		assertEquals(3, calculator.divide(9, 3));
 	}
 	
 	@Test
-	public void isEqualPositiveTest() {
-		assertTrue(calculator.isEqual(2, 2));
+	public void isEqualPositiveTest() 
+	{
+		assertTrue(calculator.isEqual(3, 3));
 	}
 	
 	@Test
-	public void isEqualNegativeTest() {
-		assertFalse(calculator.isEqual(4, 2));
+	public void isEqualNegativeTest() 
+	{
+		assertFalse(calculator.isEqual(3, 9));
 	}
 
 }
